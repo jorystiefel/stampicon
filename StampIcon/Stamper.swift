@@ -94,7 +94,7 @@ struct Stamper {
         return nil
     }
     
-    func outputImageFile(image: NSImage, filename: String) {
+    func writeImageFile(image: NSImage, filename: String) {
         
         if let imageData = image.TIFFRepresentation,
             let pngRepresentation: NSData = NSBitmapImageRep(data: imageData)?.representationUsingType(.NSPNGFileType, properties: [:])
@@ -110,7 +110,7 @@ struct Stamper {
     func processStamp() {
         
         if let outputImage = self.generateOutputImage() {
-            outputImageFile(outputImage, filename: config.outputFile)
+            writeImageFile(outputImage, filename: config.outputFile)
         } else {
             print("Could not generate output image")
         }
