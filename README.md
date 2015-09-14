@@ -16,4 +16,6 @@ option        | meaning
 --textcolor   | the text hex color in hex #FFFFFF, defaults to white
 --badgecolor  | the hex color of the ribbon behind the text, defaults to red
 
+### Thanks
 
+This utility employs [SwiftCGRectExtensions](https://github.com/nschum/SwiftCGRectExtensions) by @nschum and [UIColor-Hex-Swift](https://github.com/yeahdongcn/UIColor-Hex-Swift/blob/master/UIColorExtension.swift) by @yeahdongcn
