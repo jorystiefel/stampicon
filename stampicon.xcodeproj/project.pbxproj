@@ -1,0 +1,257 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C9E141F1BA4790200B6EF0E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E141E1BA4790200B6EF0E /* main.swift */; };
+		0C9E14261BA4828900B6EF0E /* Stamper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E14251BA4828900B6EF0E /* Stamper.swift */; };
+		0C9E14281BA4B73300B6EF0E /* NSColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E14271BA4B73300B6EF0E /* NSColor+Hex.swift */; };
+		0C9E142A1BA4C6A000B6EF0E /* CGRectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E14291BA4C6A000B6EF0E /* CGRectExtensions.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0C9E14191BA4790200B6EF0E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C9E141B1BA4790200B6EF0E /* stampicon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = stampicon; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C9E141E1BA4790200B6EF0E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0C9E14251BA4828900B6EF0E /* Stamper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stamper.swift; sourceTree = "<group>"; };
+		0C9E14271BA4B73300B6EF0E /* NSColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+Hex.swift"; sourceTree = "<group>"; };
+		0C9E14291BA4C6A000B6EF0E /* CGRectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C9E14181BA4790200B6EF0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C9E14121BA4790200B6EF0E = {
+			isa = PBXGroup;
+			children = (
+				0C9E141D1BA4790200B6EF0E /* StampIcon */,
+				0C9E141C1BA4790200B6EF0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C9E141C1BA4790200B6EF0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C9E141B1BA4790200B6EF0E /* stampicon */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C9E141D1BA4790200B6EF0E /* StampIcon */ = {
+			isa = PBXGroup;
+			children = (
+				0C9E141E1BA4790200B6EF0E /* main.swift */,
+				0C9E14251BA4828900B6EF0E /* Stamper.swift */,
+				0C9E14291BA4C6A000B6EF0E /* CGRectExtensions.swift */,
+				0C9E14271BA4B73300B6EF0E /* NSColor+Hex.swift */,
+			);
+			path = StampIcon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C9E141A1BA4790200B6EF0E /* stampicon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C9E14221BA4790200B6EF0E /* Build configuration list for PBXNativeTarget "stampicon" */;
+			buildPhases = (
+				0C9E14171BA4790200B6EF0E /* Sources */,
+				0C9E14181BA4790200B6EF0E /* Frameworks */,
+				0C9E14191BA4790200B6EF0E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = stampicon;
+			productName = StampIcon;
+			productReference = 0C9E141B1BA4790200B6EF0E /* stampicon */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C9E14131BA4790200B6EF0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Jory Stiefel";
+				TargetAttributes = {
+					0C9E141A1BA4790200B6EF0E = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 0C9E14161BA4790200B6EF0E /* Build configuration list for PBXProject "stampicon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0C9E14121BA4790200B6EF0E;
+			productRefGroup = 0C9E141C1BA4790200B6EF0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C9E141A1BA4790200B6EF0E /* stampicon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C9E14171BA4790200B6EF0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C9E141F1BA4790200B6EF0E /* main.swift in Sources */,
+				0C9E142A1BA4C6A000B6EF0E /* CGRectExtensions.swift in Sources */,
+				0C9E14281BA4B73300B6EF0E /* NSColor+Hex.swift in Sources */,
+				0C9E14261BA4828900B6EF0E /* Stamper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0C9E14201BA4790200B6EF0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0C9E14211BA4790200B6EF0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0C9E14231BA4790200B6EF0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = stampicon;
+			};
+			name = Debug;
+		};
+		0C9E14241BA4790200B6EF0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_MODULE_NAME = stampicon;
+				PRODUCT_NAME = stampicon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C9E14161BA4790200B6EF0E /* Build configuration list for PBXProject "stampicon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C9E14201BA4790200B6EF0E /* Debug */,
+				0C9E14211BA4790200B6EF0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C9E14221BA4790200B6EF0E /* Build configuration list for PBXNativeTarget "stampicon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C9E14231BA4790200B6EF0E /* Debug */,
+				0C9E14241BA4790200B6EF0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C9E14131BA4790200B6EF0E /* Project object */;
+}
