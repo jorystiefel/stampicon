@@ -73,13 +73,14 @@ func generateOutputImageWithConfig(config: StampConfig) -> NSImage? {
 }
 
 func outputImageFile(image: NSImage, filename: String) {
-    if let imageData = image.TIFFRepresentation {
-        if let pngRepresentation: NSData = NSBitmapImageRep(data: imageData)?.representationUsingType(.NSPNGFileType, properties: [:]) {
-            let success = pngRepresentation.writeToFile(filename, atomically: true)
-            if !success {
-                print("Error writing file")
-                exit(-1)
-            }
+    
+    if let imageData = image.TIFFRepresentation,
+       let pngRepresentation: NSData = NSBitmapImageRep(data: imageData)?.representationUsingType(.NSPNGFileType, properties: [:])
+    {
+        let success = pngRepresentation.writeToFile(filename, atomically: true)
+        if !success {
+            print("Error writing file")
+            exit(-1)
         }
     }
 }
