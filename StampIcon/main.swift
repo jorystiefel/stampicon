@@ -51,47 +51,10 @@ func generateConfigFromArguments() -> StampConfig {
     return config
 }
 
-func generateOutputImageWithConfig(config: StampConfig) -> NSImage? {
-
-    if let inputImage = NSImage(contentsOfFile: config.inputFile) {
-        
-        let badgeImage = generateBadgeImageWithConfig(config, maxWidth: inputImage.size.width, maxHeight: inputImage.size.height)
-        
-        let outputImage = NSImage(size: inputImage.size, flipped: false, drawingHandler: { (rect) -> Bool in
-            inputImage.drawInRect(rect)
-            badgeImage.drawInRect(rect)
-            return true
-        })
-        
-        return outputImage
-        
-    } else {
-        print("Could not read input file")
-    }
-
-    return nil
-}
-
-func outputImageFile(image: NSImage, filename: String) {
-    
-    if let imageData = image.TIFFRepresentation,
-       let pngRepresentation: NSData = NSBitmapImageRep(data: imageData)?.representationUsingType(.NSPNGFileType, properties: [:])
-    {
-        let success = pngRepresentation.writeToFile(filename, atomically: true)
-        if !success {
-            print("Error writing file")
-            exit(-1)
-        }
-    }
-}
-
 var config = generateConfigFromArguments()
+let stamper = Stamper(config: config)
+stamper.processStamp();
 
-if let outputImage = generateOutputImageWithConfig(config) {
-    outputImageFile(outputImage, filename: config.outputFile)
-} else {
-    print("Could not generate output image")
-}
 
 
 

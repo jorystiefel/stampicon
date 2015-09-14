@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C9E141F1BA4790200B6EF0E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E141E1BA4790200B6EF0E /* main.swift */; };
-		0C9E14261BA4828900B6EF0E /* BadgeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E14251BA4828900B6EF0E /* BadgeImage.swift */; };
+		0C9E14261BA4828900B6EF0E /* Stamper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E14251BA4828900B6EF0E /* Stamper.swift */; };
 		0C9E14281BA4B73300B6EF0E /* NSColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E14271BA4B73300B6EF0E /* NSColor+Hex.swift */; };
 		0C9E142A1BA4C6A000B6EF0E /* CGRectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E14291BA4C6A000B6EF0E /* CGRectExtensions.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -28,7 +28,7 @@
 /* Begin PBXFileReference section */
 		0C9E141B1BA4790200B6EF0E /* stampicon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = stampicon; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9E141E1BA4790200B6EF0E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		0C9E14251BA4828900B6EF0E /* BadgeImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeImage.swift; sourceTree = "<group>"; };
+		0C9E14251BA4828900B6EF0E /* Stamper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stamper.swift; sourceTree = "<group>"; };
 		0C9E14271BA4B73300B6EF0E /* NSColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+Hex.swift"; sourceTree = "<group>"; };
 		0C9E14291BA4C6A000B6EF0E /* CGRectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,7 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				0C9E141E1BA4790200B6EF0E /* main.swift */,
-				0C9E14251BA4828900B6EF0E /* BadgeImage.swift */,
+				0C9E14251BA4828900B6EF0E /* Stamper.swift */,
 				0C9E14291BA4C6A000B6EF0E /* CGRectExtensions.swift */,
 				0C9E14271BA4B73300B6EF0E /* NSColor+Hex.swift */,
 			);
@@ -130,7 +130,7 @@
 				0C9E141F1BA4790200B6EF0E /* main.swift in Sources */,
 				0C9E142A1BA4C6A000B6EF0E /* CGRectExtensions.swift in Sources */,
 				0C9E14281BA4B73300B6EF0E /* NSColor+Hex.swift in Sources */,
-				0C9E14261BA4828900B6EF0E /* BadgeImage.swift in Sources */,
+				0C9E14261BA4828900B6EF0E /* Stamper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
