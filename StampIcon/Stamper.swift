@@ -71,7 +71,7 @@ struct Stamper {
     func generateOutputImage() -> NSImage? {
         guard let inputImage = NSImage(contentsOfFile: self.config.inputFile) else {
             print("Could not read input file")
-            exit(-1)
+            exit(1)
         }
 
         let badgeImage = stamper.generateBadgeImage(inputImage.size.width, maxHeight: inputImage.size.height)
@@ -93,7 +93,7 @@ struct Stamper {
             let success = pngRepresentation.writeToFile(filename, atomically: true)
             if !success {
                 print("Error writing file")
-                exit(-1)
+                exit(1)
             }
         }
     }
