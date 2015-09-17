@@ -25,11 +25,7 @@ struct StampConfig {
 struct Stamper {
     
     let config: StampConfig
-    
-    init(config: StampConfig) {
-        self.config = config
-    }
-    
+
     func generateBadgeImage(maxWidth: CGFloat, maxHeight: CGFloat) -> NSImage {
         
         var textFontSize = kMaxFontSize
@@ -38,9 +34,9 @@ struct Stamper {
             NSForegroundColorAttributeName: config.textColor
         ]
         
-        let drawText = NSString(string: config.text)
+        let drawText = config.text
         
-        let badgeImage = NSImage(size: NSSize(width:maxWidth, height:maxHeight), flipped: false) { (rect) -> Bool in
+        let badgeImage = NSImage(size: NSSize(width:maxWidth, height:maxHeight), flipped: false) { rect -> Bool in
             
             let context = NSGraphicsContext.currentContext()?.CGContext
             
@@ -53,8 +49,8 @@ struct Stamper {
             
             var badgeRect = rect.center(CGSize(width: maxWidth * 2, height: textSize.height + kVerticalPadding))
             
-            badgeRect.origin.x += (1/6) * maxWidth
-            badgeRect.origin.y -= (1/6) * maxHeight
+            badgeRect.origin.x += (1.0/6) * maxWidth
+            badgeRect.origin.y -= (1.0/6) * maxHeight
             let textRect = badgeRect.center(textSize)
             
             CGContextTranslateCTM(context, badgeRect.center.x, badgeRect.center.y)
@@ -69,31 +65,26 @@ struct Stamper {
             return true
         }
         
-        return badgeImage;
+        return badgeImage
     }
     
     func generateOutputImage() -> NSImage? {
-    
-        if let inputImage = NSImage(contentsOfFile: self.config.inputFile) {
-            
-            let badgeImage = stamper.generateBadgeImage(inputImage.size.width, maxHeight: inputImage.size.height)
-            
-            let outputImage = NSImage(size: inputImage.size, flipped: false, drawingHandler: { (rect) -> Bool in
-                inputImage.drawInRect(rect)
-                badgeImage.drawInRect(rect)
-                return true
-            })
-            
-            return outputImage
-            
-        } else {
+        guard let inputImage = NSImage(contentsOfFile: self.config.inputFile) else {
             print("Could not read input file")
             exit(-1)
         }
-        
-        return nil
+
+        let badgeImage = stamper.generateBadgeImage(inputImage.size.width, maxHeight: inputImage.size.height)
+
+        let outputImage = NSImage(size: inputImage.size, flipped: false, drawingHandler: { (rect) -> Bool in
+            inputImage.drawInRect(rect)
+            badgeImage.drawInRect(rect)
+            return true
+        })
+
+        return outputImage
     }
-    
+
     func writeImageFile(image: NSImage, filename: String) {
         
         if let imageData = image.TIFFRepresentation,
