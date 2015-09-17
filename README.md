@@ -1,6 +1,8 @@
 # stampicon
 Applies a text label to PNG icons. Stampicon will automatically size the text to fit inside the ribbon, but exceedingly long text on small icons may become unreadable.
 
+This tool differs from other similar tools in that it renders the icon using Core Graphics, rather than requiring a dependency such as ImageMagick.
+
 ![Before](https://github.com/jorystiefel/stampicon/blob/master/Demo/Icon-76.png)
 ![After](https://github.com/jorystiefel/stampicon/blob/master/Demo/Icon-76.1.png)
 
