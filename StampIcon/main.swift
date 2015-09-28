@@ -23,22 +23,24 @@ func generateConfigFromArguments() -> StampConfig {
             config.inputFile = argument
             continue
         }
-
+        
+        let argIdx = idx + 1
+        
         switch argument {
         case "--text":
-            config.text = Process.arguments[idx+1]
+            config.text = Process.arguments[argIdx+1]
 
         case "--output":
-            config.outputFile = Process.arguments[idx+1]
+            config.outputFile = Process.arguments[argIdx+1]
 
         case "--font":
-            config.fontName = Process.arguments[idx+1]
+            config.fontName = Process.arguments[argIdx+1]
 
         case "--textcolor":
-            config.textColor = NSColor(rgba: Process.arguments[idx+1])
+            config.textColor = NSColor(rgba: Process.arguments[argIdx+1])
 
         case "--badgecolor":
-            config.badgeColor = NSColor(rgba: Process.arguments[idx+1])
+            config.badgeColor = NSColor(rgba: Process.arguments[argIdx+1])
 
         default:
             continue
